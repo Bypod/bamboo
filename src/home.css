@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 100;
+    
+}
+
+.home-main-container{
+    background-color: #272727;
+    width: 100%;
+    margin: auto;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+header{
+    background-color: #80FF00;
+    width: 100%;
+}
+
+.home-navbar{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: #272727;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.nav-right a:hover{
+    text-decoration: underline;
+    color: #767676;
+}
+
+#acc-badge:hover
+{
+cursor: pointer;    
+}
+
+.featured{
+    background-image: url(https://wallpaperaccess.com/full/938976.png);
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#halo-button{
+    position: relative;
+    top: 80%;
+    text-decoration: none;
+    color: white;
+    background-color: #2727279f;
+    border: 2px solid #ffffff;
+    padding: 15px 50px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    font-size: 1.8rem;
+}
+
+.genre-text{
+    color:white;
+}
+
+.genre-games{
+    text-align: center;
+}
+
+.genre-games img{
+    width:18%;
+    border-radius: 10px;
+}
+
+.margin-games{
+    margin-right: 2vw;
+}
+
+.genre-text{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.bamboo-exclusive{
+    margin-top:10px;
+}
+
+.genre-text a{
+    margin-left: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+.genre-text a:hover{
+    text-decoration: underline;
+}
+
+.genre-text a:visited{
+    color: white;
+}

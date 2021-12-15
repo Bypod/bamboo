@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 100;
+    
+}
+
+
+main{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+header{
+    background-color: #80FF00;
+    width: 100%;
+}
+
+.home-navbar{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: #272727;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.nav-right a:hover{
+    text-decoration: underline;
+    color: #767676;
+}
+
+#acc-badge:hover
+{
+cursor: pointer;    
+}
+
+.friends-container{
+    background-color: #272727;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+.friends-inner-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.friends-list{
+    width: 30%;
+    background-color: #767676;
+    margin-right: 10px;
+    border-radius: 10px;
+    height:88vh;
+}
+
+.friends-list-header{
+    display: flex;
+    justify-content: center;
+    color: #80FF00;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.friends-list-header img{
+    height: 25px;
+    position: absolute;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.friends-list-names{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.friend-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.friend-name-left{
+    display: flex; 
+    align-items: center;
+    color: #272727;
+
+}
+
+.friend-name-left h2{
+    padding-top: 10px;
+}
+
+.friend-name-right{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.friend-info:hover{
+    cursor: pointer;
+    background-color: #848484;
+    border-radius:10px ;
+    /* filter: drop-shadow(1px 1px 4px); */
+}
+
+.friends-messages{
+    width:70%;
+    height: 80vh;
+}
+.friends-messages-sent{
+    width: 100%;
+    height: 100%;
+    background-color: #767676;
+    border-radius: 10px;
+}
+
+.friend-messages-box{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #767676;
+    padding: 10px;
+    border-radius: 10px;
+    height: 7vh;
+}
+
+#message-box{
+    width: 95.75%;
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+#message-box::placeholder{
+    color: white;
+    font-size: 1.2rem;
+    /* padding-left: 10px;*/
+} 
+
+#message-box:focus{
+    outline: none;
+    background-color:#5e5e5e ;
+    border-radius: 5px;
+}
+
+#message-box:hover{
+    background-color: #5e5e5e;
+    border-radius:5px ;
+}
+
+#message-button{
+    background-color: transparent;
+    border-style: none;
+    padding: 0 5px;
+}
+
+#message-button:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #5e5e5e;
+}
+
+.new-message{
+    color: #272727;
+    padding-left: 1vw;
+    padding-top: .5vh;
+    font-size: 1.2rem;
+}
+
+#messages-start-text{
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.message-username{
+    color: white;
+}
+
+.friend-profile-pic{
+    height: 46px;
+    width: 46px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #272727;
+}
+
+#my-username-header{
+    color: #272727;
+    margin-right: 10px;
+}
