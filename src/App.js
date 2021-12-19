@@ -10,6 +10,7 @@ export default function App() {
         <Router>
             <div>
             </div>
+            //routes for each js page
             <Routes>
                 <Route exact path="/" element={<SignIn/>}/>
                 <Route path="/home" element={<Home/>}/>

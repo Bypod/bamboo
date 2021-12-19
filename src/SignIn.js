@@ -1,3 +1,4 @@
+//imports
 import React, { useState } from 'react'
 import logo from './media/big-logo.svg'
 import "./signin.css"
@@ -6,19 +7,32 @@ import { useNavigate } from "react-router-dom";
 
 export default function SignIn() {
 
-
+    //use states
     const [usernameText, setUsernameText] = useState("")
+    const [passwordText, setPasswordText] = useState("")
 
+    //navigate function for when user logs in and if statement added to make sure that theyb input username and password
     const navigate = useNavigate();
+    let handleLogClick = (e)=>{
+        if(usernameText === "" || passwordText === "") {
+            alert("Must enter username AND password")
+        } else {
+            navigate('/home')
+        } 
+    }
 
+    //password text box
+    let passwordTextUpdated = (e)=>{
+        setPasswordText(e.target.value)
+        localStorage.setItem('password', e.target.value)
+    }
+    //username text box
     let usernameTextUpdated = (e)=>{
         setUsernameText(e.target.value)
         localStorage.setItem('username', e.target.value)
     }
 
-    let handleLogClick = (e)=>{
-        navigate('/home')
-    }
+   
 
 
     return (
@@ -42,19 +56,24 @@ export default function SignIn() {
                                 onChange={usernameTextUpdated}
                                 value={usernameText}/>
                                 <br />
-                                <input type="text" id="password-input" class="input-box" placeholder="password" />
+                                <input 
+                                type="password" 
+                                id="password-input" 
+                                class="input-box" 
+                                placeholder="password" 
+                                onChange={passwordTextUpdated}
+                                value={passwordText}
+                                />
                                 <br />
                                 <input type="checkbox" id="remember-me" name="remember-me" value="Remember" />
                                 <label for="remember-me">Remember me?</label>
                                 <br />
                                 <h4 id="sign-up-link">
                                 or sign up now
-                                    {/*  figure out how to link this to the sign up page */}
                                 </h4>
                             </div>
                             <div className="box-footer">
                                 <h4><a href="" id="forgot-pass">forgot password?</a></h4>
-                                {/* <input type="submit" value="Log In" id="enter-button" /> */}
                                 <button onClick={handleLogClick}><a id="enter-button">Log In</a></button>
                             </div>
                         </div>
